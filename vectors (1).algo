@@ -1,0 +1,33 @@
+PROCEDURE dot_product (tab1[], tab2[])
+VAR
+    i : INTEGER;
+    sum :=0 : INTEGER;
+BEGIN
+IF (tab1.length==tab2.length) THEN
+    FOR i FROM 0 TO tab1.length STEP 1  DO
+    sum = sum + (tab1[i] * tab2[i]);
+    END_FOR
+
+ELSE
+ WRITE ("enter two vectors with the same length")
+END_IF    
+END
+
+
+ALGORITHM VectorsOrthogonal
+VAR
+    i,j : INTEGER;
+
+BEGIN
+    FOR i FROM 0 TO tab1.length STEP 1  DO
+        FOR j FROM 0 TO tab2.length STEP 1  DO
+        
+        dot_product (tab1[], tab2[]);
+     
+    if (dot_product = 0)
+     WRITE ("the vectors are orthogonals")
+    END IF
+
+        END_FOR
+    END_FOR
+END
